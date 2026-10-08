@@ -9,7 +9,7 @@ export default function Page() {
           </a>
           <nav className="nav">
             <a href="#about">About</a>
-            <a href="#product">Product</a>
+            <a href="#product">Products</a>
             <a href="#technology">Technology</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -28,8 +28,8 @@ export default function Page() {
             </span>
             <h1>Building useful technology.</h1>
             <p className="lead">
-              We are developing software and AI-powered products to solve
-              practical problems.
+              Xelvion is developing MegaMart (e-commerce) and CineVN
+              (movie streaming) — practical web products with AI assistance.
             </p>
             <div className="hero-cta">
               <a className="btn btn-primary" href="#contact">
@@ -51,9 +51,9 @@ export default function Page() {
             <p className="kicker">About</p>
             <h2 className="h2">A small team focused on practical problems.</h2>
             <p className="sub">
-              Xelvion is an early-stage software startup. We are building and
-              learning quickly, starting with a simple website and iterating
-              toward useful AI-powered tools.
+              Xelvion is an early-stage software startup building two products:
+              MegaMart for online shopping and CineVN for movie streaming. We
+              start with working web apps and iterate toward useful AI features.
             </p>
 
             <div className="grid2">
@@ -61,8 +61,8 @@ export default function Page() {
                 <div className="icon" aria-hidden="true">◍</div>
                 <h3>What we do</h3>
                 <p>
-                  We design and develop web software, from landing pages to
-                  small AI-assisted applications. Our focus is clarity, speed,
+                  We design fullstack web software — storefronts, streaming
+                  experiences, and admin tools. Our focus is clarity, speed,
                   and reliability.
                 </p>
               </div>
@@ -83,38 +83,55 @@ export default function Page() {
         {/* PRODUCT */}
         <section id="product" className="section section-soft">
           <div className="container">
-            <p className="kicker">Product</p>
-            <h2 className="h2">What we&apos;re building</h2>
+            <p className="kicker">Products</p>
+            <h2 className="h2">MegaMart &amp; CineVN</h2>
             <p className="sub">
-              Our first direction is a lightweight AI assistant for everyday
-              work — helping individuals summarize, draft, and organize
-              information faster.
+              Two products in active development. No public launch, customers,
+              or revenue to report yet — we are building and testing.
             </p>
 
-            <div className="grid3">
+            <div className="grid2">
               <div className="card">
-                <div className="icon" aria-hidden="true">✎</div>
-                <h3>Draft &amp; summarize</h3>
+                <div className="icon" aria-hidden="true">🛒</div>
+                <h3>MegaMart — E-commerce</h3>
                 <p>
-                  Turn rough notes into clear drafts, summaries, and action
-                  items. Built for students, freelancers, and small teams.
+                  Fullstack online shopping prototype: storefront with cart,
+                  3D product preview, flash-sale demo with Redis inventory
+                  hold, sandbox checkout integration (VNPAY / Stripe test
+                  mode), and an admin dashboard prototype for catalog,
+                  variants, stock, and sales reports.
                 </p>
+                <div className="tech-tags tags-dark">
+                  <span className="tag tag-dark">Next.js</span>
+                  <span className="tag tag-dark">NestJS</span>
+                  <span className="tag tag-dark">PostgreSQL</span>
+                  <span className="tag tag-dark">Redis</span>
+                  <span className="tag tag-dark">Docker</span>
+                </div>
+                <span className="status">
+                  ● In development — Docker-ready, not yet launched
+                </span>
               </div>
               <div className="card">
-                <div className="icon" aria-hidden="true">▦</div>
-                <h3>Simple by design</h3>
+                <div className="icon" aria-hidden="true">🎬</div>
+                <h3>CineVN — Video player demo</h3>
                 <p>
-                  No complex setup. A clean web experience that works on mobile
-                  and desktop from day one.
+                  Streaming-technology demo in the browser: adaptive HLS
+                  playback, cinematic UI with Ambilight effect,
+                  continue-watching, Skip Intro, auto next-episode, watch
+                  history and favorites. Built and tested with open-licensed /
+                  trailer content only — no copyrighted catalog.
                 </p>
-              </div>
-              <div className="card">
-                <div className="icon" aria-hidden="true">◐</div>
-                <h3>Responsible AI</h3>
-                <p>
-                  We show sources where possible, respect privacy, and keep
-                  humans in control of the final decision.
-                </p>
+                <div className="tech-tags tags-dark">
+                  <span className="tag tag-dark">Next.js</span>
+                  <span className="tag tag-dark">HLS.js</span>
+                  <span className="tag tag-dark">Node.js</span>
+                  <span className="tag tag-dark">MongoDB</span>
+                  <span className="tag tag-dark">Caddy + Docker</span>
+                </div>
+                <span className="status">
+                  ● In development — local staging, not yet launched
+                </span>
               </div>
             </div>
 
@@ -122,22 +139,23 @@ export default function Page() {
               <li>
                 <span className="check">✓</span>
                 <span>
-                  <strong>Problem:</strong> people waste time rewriting the same
-                  emails, notes, and reports.
+                  <strong>Problem:</strong> small shops need an affordable,
+                  modern storefront; developers need a fast, reusable HLS video
+                  player demo for the browser.
                 </span>
               </li>
               <li>
                 <span className="check">✓</span>
                 <span>
-                  <strong>Users:</strong> early adopters who want a fast,
-                  honest AI helper — not a black box.
+                  <strong>Users:</strong> early testers and friends trying demo
+                  builds — not paying customers yet.
                 </span>
               </li>
               <li>
                 <span className="check">✓</span>
                 <span>
-                  <strong>Status:</strong> prototype in development. No public
-                  launch yet.
+                  <strong>Status:</strong> both prototypes in development. No
+                  public launch, no revenue, no funding to report.
                 </span>
               </li>
             </ul>
@@ -148,21 +166,23 @@ export default function Page() {
         <section id="technology" className="section">
           <div className="container">
             <p className="kicker">Technology</p>
-            <h2 className="h2">Built with modern web + Claude.</h2>
+            <h2 className="h2">Modern web + practical AI.</h2>
             <p className="sub">
-              We use a lean stack we actually know — Next.js deployed on Vercel
-              — and we plan to integrate the Claude API by Anthropic for
-              reasoning, summarization, and drafting features.
+              Our stack is Next.js + TypeScript on the frontend, NestJS / Node.js
+              on the backend, with PostgreSQL, MongoDB, Redis, and Docker for
+              deploy. We prototype AI features with Gemini / OpenAI today and
+              plan to integrate the Claude API by Anthropic.
             </p>
 
             <div className="tech-box">
               <div>
-                <h3>Why Claude API?</h3>
+                <h3>Why Claude API next?</h3>
                 <p>
-                  We chose Claude for its strong reasoning, long-context
-                  handling, and focus on safety. Our product will call the
-                  Claude API server-side for summarization and assisted writing,
-                  with clear user consent and data handling.
+                  We want Claude for strong reasoning, long-context handling,
+                  and safety focus: product-description drafting and review
+                  summarization for MegaMart, plus synopsis explanations and
+                  recommendation write-ups for CineVN — all called server-side
+                  with clear user consent.
                 </p>
                 <p>
                   Learn more at{" "}
@@ -187,20 +207,21 @@ export default function Page() {
                 </p>
                 <div className="tech-tags">
                   <span className="tag">Next.js</span>
-                  <span className="tag">Vercel</span>
-                  <span className="tag">Claude API</span>
-                  <span className="tag">TypeScript</span>
+                  <span className="tag">NestJS / Node.js</span>
+                  <span className="tag">PostgreSQL / MongoDB</span>
+                  <span className="tag">Redis / Docker</span>
+                  <span className="tag">Claude API (planned)</span>
                 </div>
               </div>
               <div className="card">
                 <div className="icon" aria-hidden="true">⬢</div>
                 <h3>How we&apos;ll use Claude</h3>
                 <p>
-                  1. Summarize user-provided text.
+                  1. MegaMart: draft product descriptions, summarize reviews.
                   <br />
-                  2. Draft structured output from bullet notes.
+                  2. CineVN: explain recommendations, summarize discussions.
                   <br />
-                  3. Explain results in plain language.
+                  3. Both: plain-language explanations, human in control.
                 </p>
                 <p className="mt">
                   No training on private user data. No hidden prompts.
@@ -269,7 +290,7 @@ export default function Page() {
             © {new Date().getFullYear()} Xelvion · xelvion.world · In
             development
           </span>
-          <span>Built with Next.js · Deployed on Vercel · AI via Claude</span>
+          <span>Built with Next.js · Deployed on Vercel · Exploring Claude API</span>
         </div>
       </footer>
     </>

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Xelvion — Building useful technology",
+  title: "Xelvion — Software & AI Startup",
   description:
-    "Xelvion is developing software and AI-powered products to solve practical problems. Currently in development.",
+    "Xelvion is building MegaMart (e-commerce prototype) and CineVN (video player tech demo). Early-stage startup, currently in development.",
   metadataBase: new URL("https://xelvion.world"),
   alternates: {
     canonical: "/",
@@ -13,18 +13,18 @@ export const metadata: Metadata = {
     icon: "/icon.svg",
   },
   openGraph: {
-    title: "Xelvion — Building useful technology",
+    title: "Xelvion — Software & AI Startup",
     description:
-      "We are developing software and AI-powered products to solve practical problems.",
+      "Early-stage startup building e-commerce prototype and video tech demo.",
     url: "https://xelvion.world",
     siteName: "Xelvion",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Xelvion — Building useful technology",
+    title: "Xelvion — Software & AI Startup",
     description:
-      "We are developing software and AI-powered products to solve practical problems.",
+      "Early-stage startup building e-commerce prototype and video tech demo.",
   },
   robots: {
     index: true,

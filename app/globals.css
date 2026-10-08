@@ -377,6 +377,10 @@ a {
   margin-top: 14px;
 }
 
+.tags-dark {
+  margin-top: 16px;
+}
+
 .tag {
   font-size: 13px;
   font-weight: 650;
@@ -385,6 +389,12 @@ a {
   padding: 6px 10px;
   border-radius: 999px;
   color: #e0e7ff;
+}
+
+.tech-tags .tag.tag-dark {
+  background: #eef2ff;
+  border-color: #e0e7ff;
+  color: #3730a3;
 }
 
 /* Contact */
