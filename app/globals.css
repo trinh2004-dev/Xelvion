@@ -1005,40 +1005,96 @@ a {
   color: #f1f5f9;
 }
 
-.code-preview-box {
-  background: #070913;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
+.ai-pipeline-box {
+  background: #080c18;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
   overflow: hidden;
+  margin-top: 18px;
 }
 
-.code-header {
+.ai-pipeline-header {
   background: rgba(255, 255, 255, 0.04);
-  padding: 8px 14px;
+  padding: 10px 16px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  font-size: 12px;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #cbd5e1;
   border-bottom: 1px solid var(--border-subtle);
 }
 
-.code-lang {
-  color: #cbd5e1;
-  font-weight: 600;
-}
-
-.code-model {
-  font-family: monospace;
+.model-chip {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
   color: var(--brand-purple);
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
 }
 
-.code-content {
-  padding: 14px;
-  font-family: "Fira Code", Consolas, Monaco, monospace;
+.model-chip.chip-cyan {
+  color: var(--brand-cyan);
+  background: rgba(6, 182, 212, 0.12);
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.ai-pipeline-steps {
+  padding: 14px 16px;
+  display: grid;
+  gap: 12px;
+}
+
+.pipeline-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.step-num {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--text-dim);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.step-content {
+  flex: 1;
+}
+
+.step-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1.3;
+}
+
+.step-desc {
   font-size: 12px;
-  line-height: 1.5;
-  color: #93c5fd;
-  overflow-x: auto;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-top: 2px;
+}
+
+.pipeline-footer {
+  background: rgba(0, 0, 0, 0.3);
+  border-top: 1px solid var(--border-subtle);
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pipeline-metric {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
 }
 
 .ai-trust-banner {
