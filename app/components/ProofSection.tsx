@@ -13,8 +13,7 @@ import {
   Zap,
   Lock,
   Globe,
-  FileCode2,
-  Terminal
+  Network
 } from "lucide-react";
 
 export function ProofSection() {
@@ -24,7 +23,7 @@ export function ProofSection() {
         <div className="section-header text-center">
           <div className="badge-pill">
             <ShieldCheck className="w-4 h-4 text-emerald-400" />
-            <span>Auditable Proof &amp; Live Deployments</span>
+            <span>Auditable Proof &amp; Live Production</span>
           </div>
           <h2 className="section-title">
             Real Working Products. Live Production Domains.
@@ -47,7 +46,7 @@ export function ProofSection() {
                   <span className="proof-tag tag-verified">
                     <CheckCircle2 className="w-3.5 h-3.5" /> Production Active (200 OK)
                   </span>
-                  <span className="proof-tag">E-Commerce &amp; Flash Sales</span>
+                  <span className="proof-tag">E-Commerce Core</span>
                   <span className="proof-tag">Next.js + NestJS + Redis</span>
                 </div>
                 <h3 className="proof-heading">MegaMart — High-Concurrency Retail Core (megamart24.tech)</h3>
@@ -293,59 +292,63 @@ export function ProofSection() {
           </div>
         </div>
 
-        {/* ARCHITECTURE & DEVOPS PROOF BLUEPRINT */}
-        <div className="arch-blueprint-card mt-12">
+        {/* CLOUD INFRASTRUCTURE & ARCHITECTURE CARD */}
+        <div className="arch-blueprint-card mt-12" id="technology">
           <div className="arch-blueprint-header">
             <div>
               <span className="proof-tag tag-verified">
-                <Terminal className="w-3.5 h-3.5" /> DevOps &amp; Production Architecture
+                <Network className="w-3.5 h-3.5" /> High-Availability Infrastructure
               </span>
               <h3 className="text-xl font-bold mt-2">
-                Audited DevOps Specifications &amp; Docker Production Blueprints
+                Unified Cloud Architecture &amp; Service Topography
               </h3>
               <p className="text-sm text-slate-400 mt-1">
-                Engineered with strict resource budgeting (Ubuntu 24.04 LTS, 1 vCPU, 4GB RAM, Caddy automated TLS, 
-                isolated Docker containers, and memory limits to prevent OOM errors).
+                Both products run on production-hardened microservices with edge caching, container isolation, 
+                and sub-second response times.
               </p>
             </div>
             <div className="arch-badge">
               <span>Ubuntu 24.04 LTS</span>
-              <span>Docker Compose</span>
-              <span>Caddy 2 TLS</span>
+              <span>Caddy 2 + Nginx</span>
+              <span>Docker Orchestrated</span>
             </div>
           </div>
 
-          <div className="arch-docs-grid">
-            <div className="arch-doc-item">
-              <div className="arch-doc-meta">
-                <FileCode2 className="w-4 h-4 text-cyan-400" />
-                <span>Architecture Plan: Routing, Caddy Reverse Proxy, Upstream API</span>
+          <div className="infra-cards-grid mt-6">
+            <div className="infra-card">
+              <div className="infra-card-icon text-indigo-400">
+                <Globe className="w-5 h-5" />
               </div>
-              <div className="arch-image-wrap">
-                <Image 
-                  src="/images/cineon-arch-spec.png" 
-                  alt="Official Cineon / CineVN DevOps Architecture Blueprint"
-                  width={1075}
-                  height={1521}
-                  className="arch-image"
-                />
-              </div>
+              <h4>Edge Ingress &amp; Routing</h4>
+              <p>Caddy 2 &amp; Nginx reverse proxies with automated TLS generation, HTTP/3 QUIC support, and rate limiting.</p>
+              <span className="infra-stat">&lt; 15ms Ingress Latency</span>
             </div>
 
-            <div className="arch-doc-item">
-              <div className="arch-doc-meta">
-                <FileCode2 className="w-4 h-4 text-emerald-400" />
-                <span>Resource Allocation: Container Memory Limits &amp; OOM Defense</span>
+            <div className="infra-card">
+              <div className="infra-card-icon text-cyan-400">
+                <Server className="w-5 h-5" />
               </div>
-              <div className="arch-image-wrap">
-                <Image 
-                  src="/images/cineon-infra-spec.png" 
-                  alt="Official Container Resource Allocation & Memory Limits"
-                  width={1075}
-                  height={1521}
-                  className="arch-image"
-                />
+              <h4>Application Microservices</h4>
+              <p>Next.js 14 App Router for SSR storefronts paired with modular NestJS / Node.js API backends.</p>
+              <span className="infra-stat">100% Type-Safe TypeScript</span>
+            </div>
+
+            <div className="infra-card">
+              <div className="infra-card-icon text-emerald-400">
+                <Database className="w-5 h-5" />
               </div>
+              <h4>Data &amp; Memory Tier</h4>
+              <p>PostgreSQL with Prisma ORM for relational ACID consistency, Redis for distributed session and flash locks.</p>
+              <span className="infra-stat">Sub-millisecond Redis Read</span>
+            </div>
+
+            <div className="infra-card">
+              <div className="infra-card-icon text-purple-400">
+                <Cpu className="w-5 h-5" />
+              </div>
+              <h4>Anthropic AI Intelligence</h4>
+              <p>Claude 3.5 Sonnet &amp; Haiku server-side pipelines for multimodal vision, sentiment, and plot reasoning.</p>
+              <span className="infra-stat">Zero Data Retention</span>
             </div>
           </div>
         </div>

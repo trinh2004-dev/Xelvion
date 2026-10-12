@@ -20,7 +20,7 @@ import {
 export function VideoShowcase() {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
-  const [activeSegment, setActiveSegment] = useState<"cinevn" | "megamart" | "catalog" | "arch">("cinevn");
+  const [activeSegment, setActiveSegment] = useState<"cinevn" | "megamart" | "catalog" | "threed">("cinevn");
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
   const togglePlay = () => {
@@ -47,7 +47,7 @@ export function VideoShowcase() {
     setIsPlaying(true);
   };
 
-  const seekTo = (seconds: number, segment: "cinevn" | "megamart" | "catalog" | "arch") => {
+  const seekTo = (seconds: number, segment: "cinevn" | "megamart" | "catalog" | "threed") => {
     if (!videoRef.current) return;
     videoRef.current.currentTime = seconds;
     videoRef.current.play();
@@ -90,7 +90,7 @@ export function VideoShowcase() {
               </div>
               <div className="player-badge">
                 <span className="live-dot" />
-                <span>LIVE ECOSYSTEM</span>
+                <span>LIVE PRODUCTS</span>
               </div>
             </div>
 
@@ -161,28 +161,28 @@ export function VideoShowcase() {
                   className={`chapter-btn ${activeSegment === "cinevn" ? "active" : ""}`}
                   onClick={(e) => { e.stopPropagation(); seekTo(0, "cinevn"); }}
                 >
-                  <span>0:00</span> CineVN (cinevn.me)
+                  <span>0:00</span> CineVN Player (cinevn.me)
                 </button>
                 <button
                   type="button"
                   className={`chapter-btn ${activeSegment === "megamart" ? "active" : ""}`}
                   onClick={(e) => { e.stopPropagation(); seekTo(4, "megamart"); }}
                 >
-                  <span>0:04</span> MegaMart (megamart24.tech)
+                  <span>0:04</span> MegaMart Store (megamart24.tech)
                 </button>
                 <button
                   type="button"
                   className={`chapter-btn ${activeSegment === "catalog" ? "active" : ""}`}
                   onClick={(e) => { e.stopPropagation(); seekTo(8, "catalog"); }}
                 >
-                  <span>0:08</span> Multi-Genre Filter
+                  <span>0:08</span> Dynamic Filters
                 </button>
                 <button
                   type="button"
-                  className={`chapter-btn ${activeSegment === "arch" ? "active" : ""}`}
-                  onClick={(e) => { e.stopPropagation(); seekTo(12, "arch"); }}
+                  className={`chapter-btn ${activeSegment === "threed" ? "active" : ""}`}
+                  onClick={(e) => { e.stopPropagation(); seekTo(12, "threed"); }}
                 >
-                  <span>0:12</span> DevOps Blueprint
+                  <span>0:12</span> 3D Product Engine
                 </button>
               </div>
 
@@ -223,8 +223,8 @@ export function VideoShowcase() {
             </div>
             <h4>Cloud Edge Architecture</h4>
             <p>
-              Containerized Caddy 2 reverse proxy with automated Let&apos;s Encrypt TLS certificates, 
-              isolated Docker bridge networks, and automatic container health-checks on Ubuntu 24.04 LTS.
+              Production Caddy 2 and Nginx reverse proxies with automated TLS certificates, 
+              isolated Docker bridge networks, and automatic container health-checks.
             </p>
           </div>
         </div>
