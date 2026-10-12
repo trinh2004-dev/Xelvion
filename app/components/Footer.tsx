@@ -10,7 +10,13 @@ export function Footer() {
         <div className="footer-brand-col">
           <div className="brand">
             <div className="brand-mark">
-              <span>X</span>
+              <img
+                src="/images/xelvion-mark.svg"
+                alt="Xelvion Nexus Logo Mark"
+                width={36}
+                height={36}
+                className="brand-mark-img"
+              />
             </div>
             <span className="brand-title">XELVION</span>
           </div>
@@ -36,9 +42,12 @@ export function Footer() {
           </div>
 
           <div className="footer-link-group">
-            <h5>Technology</h5>
+            <h5>Technology &amp; Brand</h5>
             <a href="#proof">Verified Live Proof</a>
             <a href="#claude-ai">Claude 3.5 Integration</a>
+            <a href="/images/xelvion-logo.svg" target="_blank" rel="noreferrer">
+              Brand Assets (Vector SVG Logo)
+            </a>
             <a href="#roadmap">Milestone Roadmap</a>
           </div>
 

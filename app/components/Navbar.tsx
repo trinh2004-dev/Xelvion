@@ -5,9 +5,15 @@ export function Navbar() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a className="brand" href="#top">
+        <a className="brand" href="#top" title="Xelvion — Home">
           <div className="brand-mark">
-            <span>X</span>
+            <img
+              src="/images/xelvion-mark.svg"
+              alt="Xelvion Nexus Logo Mark"
+              width={38}
+              height={38}
+              className="brand-mark-img"
+            />
           </div>
           <div className="brand-text">
             <span className="brand-title">XELVION</span>
