@@ -65,15 +65,15 @@ export function RoadmapSection() {
               <CircleDot className="w-4 h-4 text-cyan-400 animate-pulse" />
               <span>Phase 2 · Active Now</span>
             </div>
-            <h4>Accelerator Reviews &amp; Claude AI Testing</h4>
+            <h4>Accelerator Reviews &amp; Cloud AI Architecture</h4>
             <p className="timeline-desc">
-              Submitting verified applications to Claude Startups (Anthropic), AWS Activate, and leading accelerators. 
-              Benchmarking Claude 3.5 API latency on staging endpoints.
+              Submitting verified applications to Google Cloud for Startups, AWS Activate, Anthropic, and leading accelerators. 
+              Benchmarking multimodal AI API latency and containerized throughput on staging endpoints.
             </p>
             <ul className="timeline-list">
               <li>
                 <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                <span>Submission to Claude Startups (Anthropic)</span>
+                <span>Submissions to Google Cloud for Startups &amp; AI Accelerators</span>
               </li>
               <li>
                 <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
@@ -81,7 +81,7 @@ export function RoadmapSection() {
               </li>
               <li>
                 <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
-                <span>AWS Activate &amp; Google Cloud for Startups applications</span>
+                <span>Microservice scaling across Google Cloud Run &amp; AWS</span>
               </li>
             </ul>
           </div>

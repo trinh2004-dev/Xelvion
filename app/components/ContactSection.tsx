@@ -44,7 +44,7 @@ export function ContactSection() {
             
             <p className="contact-info-desc">
               This mailbox is monitored by founder An Huynh. We prioritize correspondence from 
-              startup accelerator committees (Claude Startups, Y Combinator, Techstars), cloud credit evaluators, 
+              startup accelerator committees (Google for Startups, AWS Activate, Claude Startups, Y Combinator, Techstars), cloud credit evaluators, 
               and technical partners.
             </p>
 
@@ -103,21 +103,21 @@ export function ContactSection() {
 
             <div className="action-templates-list">
               <a
-                href="mailto:anhuynh@xelvion.world?subject=%5BClaude%20Startups%20Evaluation%5D%20Xelvion%20Application&body=Hello%20An%20Huynh%2C%0A%0AWe%20have%20reviewed%20your%20Claude%20Startups%20application%20and%20would%20like%20to%20follow%20up%20on%3A%0A-%20...%0A"
+                href="mailto:anhuynh@xelvion.world?subject=%5BGoogle%20for%20Startups%20Evaluation%5D%20Xelvion%20Application&body=Hello%20An%20Huynh%2C%0A%0AWe%20are%20reviewing%20your%20Google%20for%20Startups%20application%20and%20would%20like%20to%20follow%20up%20on%3A%0A-%20...%0A"
                 className="action-template-btn"
               >
                 <div className="action-template-icon text-purple-400">
                   <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
-                  <div className="action-template-title">Claude Startups / Accelerator Review</div>
-                  <div className="action-template-sub">Follow-up on credits, API access, or interview</div>
+                  <div className="action-template-title">Google for Startups / Accelerator Review</div>
+                  <div className="action-template-sub">Follow-up on credits, cloud infrastructure, or verification</div>
                 </div>
                 <Send className="w-4 h-4 text-slate-400 ml-auto shrink-0" />
               </a>
 
               <a
-                href="mailto:anhuynh@xelvion.world?subject=%5BCloud%20Credits%20Evaluation%5D%20AWS%20Activate%20%2F%20Google%20Cloud&body=Hello%20An%2C%0A%0ARegarding%20your%20cloud%20startup%20credits%20application%20for%20Xelvion%3A%0A"
+                href="mailto:anhuynh@xelvion.world?subject=%5BCloud%20Credits%20Evaluation%5D%20Google%20Cloud%20%2F%20AWS%20Activate&body=Hello%20An%2C%0A%0ARegarding%20your%20cloud%20startup%20credits%20application%20for%20Xelvion%3A%0A"
                 className="action-template-btn"
               >
                 <div className="action-template-icon text-cyan-400">
@@ -125,7 +125,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <div className="action-template-title">Cloud Credits &amp; Infrastructure Support</div>
-                  <div className="action-template-sub">AWS Activate, Google for Startups, NVIDIA Inception</div>
+                  <div className="action-template-sub">Google for Startups, AWS Activate, NVIDIA Inception</div>
                 </div>
                 <Send className="w-4 h-4 text-slate-400 ml-auto shrink-0" />
               </a>

@@ -53,8 +53,8 @@ export function Footer() {
 
           <div className="footer-link-group">
             <h5>Evaluation</h5>
-            <a href="https://console.anthropic.com" target="_blank" rel="noreferrer">
-              Claude Console
+            <a href="https://cloud.google.com/startup" target="_blank" rel="noreferrer">
+              Google for Startups
             </a>
             <a href="mailto:anhuynh@xelvion.world">
               anhuynh@xelvion.world

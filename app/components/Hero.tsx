@@ -19,7 +19,7 @@ export function Hero() {
       <div className="container hero-inner">
         <div className="pill-badge">
           <span className="pill-dot" aria-hidden="true" />
-          <span className="pill-text">Claude Startups &amp; Accelerator Evaluation Candidate</span>
+          <span className="pill-text">Google Cloud &amp; Startup Accelerator Candidate</span>
         </div>
 
         <h1 className="hero-headline">
@@ -43,7 +43,7 @@ export function Hero() {
           </a>
           <a className="btn btn-outline" href="#claude-ai">
             <Cpu className="w-4 h-4 text-purple-400" />
-            <span>Claude API Blueprint</span>
+            <span>AI Architecture Blueprint</span>
           </a>
         </div>
 
@@ -78,8 +78,8 @@ export function Hero() {
               <Cpu className="w-5 h-5 text-emerald-400" />
             </div>
             <div>
-              <div className="ribbon-num">Anthropic Claude AI</div>
-              <div className="ribbon-label">Multimodal Vision &amp; Reasoning</div>
+              <div className="ribbon-num">Multimodal AI Core</div>
+              <div className="ribbon-label">Vision Reasoning &amp; Pipelines</div>
             </div>
           </div>
 
